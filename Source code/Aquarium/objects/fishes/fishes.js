@@ -9,6 +9,7 @@ import * as Fish8 from "./fish8.js";
 import * as Fish9 from "./fish9.js";
 import * as Fish10 from "./fish10.js";
 import * as Starfish from "./starfish.js";
+import * as Crab from "./crab1.js";
 
 let starfish;
 let fishes = [10];
@@ -77,8 +78,13 @@ export class Fishes {
     fishes_[9].receiveShadow = true;
     scenes.add(fishes_[9]);
 
+    // create star fish
     starfish = new Starfish.Starfish();
     scenes.add(starfish.fishObj);
+
+    // // create crab
+    // crab = new Crab.Crab()
+    // scenes.add(starfish.fishObj);
 
     return scenes;
   }
@@ -157,5 +163,12 @@ export class Fishes {
       fishes_[9].position.y = 20 + 40 * Math.cos(speed);
       fishes_[9].rotation.y = timer * fishes[9].speed;
     }
+
+    // /* crab 0 */
+    // {
+    //   crab.position.x = -30 * Math.cos(speed);
+    //   crab.position.x = 20 + 40 * Math.cos(speed);
+    //   crab.position.x = timer * fishes[9].speed;
+    // }
   }
 }

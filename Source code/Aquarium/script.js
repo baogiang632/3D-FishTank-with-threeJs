@@ -164,7 +164,7 @@ function createWater() {
 }
 
 function createFish() {
-    fishes = new Fishes.Fishes();//
+    fishes = new Fishes.Fishes();
     fishes.createFishes(scene);
 }
 
